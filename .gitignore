@@ -1,3 +1,14 @@
-.*.swp
-out
-out
+# Ignore compiled executables (the "out" files)
+connect4
+connect4_oop
+connect4_proc
+*.out
+*.exe
+oop_game
+procedural_game
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore build directories if you use them
+build/
