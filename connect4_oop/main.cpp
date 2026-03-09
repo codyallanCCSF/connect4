@@ -1,18 +1,10 @@
+#include "Connect4.h"
 #include "constants.h"
-#include <iostream>
-#include <string>
-
-void playGame(char board[][COLUMNS]);
-void initializeBoard(char board[][COLUMNS]);
-std::string boardToString(char board[][COLUMNS]);
-
 
 int main(){
-  char board[ROWS][COLUMNS];
+  Connect4 game(ROWS, COLUMNS, PLAYER_ONE_PIECE, PLAYER_TWO_PIECE);
 
-  initializeBoard(board);
-
-  playGame(board);
+  game.playGame();
   return 0;
 
 }
